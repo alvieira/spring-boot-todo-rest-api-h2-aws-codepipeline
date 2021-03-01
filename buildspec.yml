@@ -10,7 +10,6 @@ phases:
     commands:
       - echo pre_build          
   build:    
-    on-failure: ABORT | CONTINUE
     commands:
       - mvn package
       - echo build    
