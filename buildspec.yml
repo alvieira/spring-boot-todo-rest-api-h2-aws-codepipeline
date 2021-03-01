@@ -1,14 +1,12 @@
 version: 0.2
 
 phases:
-  install:    
-    on-failure: ABORT | CONTINUE
+  install: 
     runtime-versions:
       java: openjdk11      
     commands:
       - echo install     
   pre_build:    
-    on-failure: ABORT | CONTINUE
     commands:
       - echo pre_build          
   build:    
@@ -17,7 +15,6 @@ phases:
       - mvn package
       - echo build    
   post_build:    
-    on-failure: ABORT | CONTINUE
     commands:
       - echo post_build
       
