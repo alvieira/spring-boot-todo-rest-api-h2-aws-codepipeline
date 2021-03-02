@@ -1,1 +1,0 @@
-web_foo: java -jar target/spring-boot-todo-rest-api-h2-aws-codepipeline-0.0.1-SNAPSHOT.jar
