@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install: 
     runtime-versions:
-      java: openjdk11     
+      java: corretto11     
     commands:
       - echo install     
   pre_build:    
@@ -21,3 +21,4 @@ phases:
 artifacts:
   files:
     - target/spring-boot-todo-rest-api-h2-aws-codepipeline-0.0.1-SNAPSHOT.jar
+  discard-paths: yes
